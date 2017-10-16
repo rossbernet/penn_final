@@ -24,7 +24,7 @@ var map_nyc3d = new mapboxgl.Map({
 });
 
 
-// COMPARE TESTING
+// COMPARE MAPS
 var map_compare_a = new mapboxgl.Map({
     container: 'map_container_compare_a',
     style: 'mapbox://styles/mapbox/light-v9',
