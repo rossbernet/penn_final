@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Population Density</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js'></script>
+
+    <!-- CSS Imports -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <ul class="nav nav-tabs" id = "allTabs">
+        <li class="active">
+            <a data-toggle="tab" href="#1"><b>City</b></a>
+        </li>
+        <li >
+          <a data-toggle="tab" href="#2"><b>County</b></a>
+        </li>
+        <li >
+          <a data-toggle="tab" href="#3"><b>Comparison</b></a>
+        </li>
+        <li >
+          <a data-toggle="tab" href="#4"><b>NYC in 3D</b></a>
+        </li>
+
+      </ul>
+
+      <div class="tab-content">
+
+        <div class="tab-pane active" id="1">
+            <div class="sidebar">
+                <h0 class="header"><b>Cities</b></h0>
+                    <center><img src="pop_density.jpg" height="270" width="270"></center>
+
+                    <p class="main"> The population density of our cities has a significant
+                      influence on quality of life.
+                      Population density is simply a measure of the number of people per unit
+                      area. There are significant costs and significant benefits for each
+                      style of constructing a city. A city with low population density,
+                      enables residents to have yards. But it also means people need to
+                      drive places because amenities are often further away. Higher
+                      population density generally results in a greater selection of
+                      restaurants, bars, cafes, and cultural amenities closer to someone's
+                      house. But even within cities, population density is generally
+                      extremely varied. This map allows you to explore the population
+                      density of New York City.
+                    </p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="2">
+            <div class="sidebar">
+                <h0 class="header"><b>COUNTIES</b></h0>
+                    <p class="main"> SUP THIS IS SOME INFO ABOUT COUNTIES </p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="3">
+            <div class="sidebar">
+                <h0 class="header"><b>COUNTIES</b></h0>
+                    <p class="main"> SUP THIS IS SOME INFO ABOUT comparing </p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="4">
+            <div class="sidebar">
+                <h0 class="header"><b>COUNTIES</b></h0>
+                    <p class="main"> SUP THIS IS SOME INFO ABOUT 3dness </p>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Map -->
+    <div id="map_container_city" class="map"></div>
+    <div id="map_container_county" class="map" style="visibility : hidden"></div>
+    <div id="map_container_compare_a" class="map" style="visibility : hidden"></div>
+    <div id="map_container_compare_b" class="map" style="visibility : hidden"></div>
+    <div id="map_container_nyc3d" class="map" style="visibility : hidden"></div>
+
+
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+  </body>
+</html>
