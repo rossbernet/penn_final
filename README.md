@@ -1,6 +1,6 @@
 # Javascript and HTML + Mapping
 
-This repo holds my final project for this class that I audited at [Penn](https://github.com/CPLN692-MUSA611) in the Spring of 2017.
+This repo holds my final project for [this class that I audited at Penn](https://github.com/CPLN692-MUSA611) in the Spring of 2017.
 
 Here is the site published to [github pages](https://rossbernet.github.io/penn_final/)
 
