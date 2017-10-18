@@ -15,6 +15,15 @@ p {
 	line-height: 5px;*/
 }
 
+.footnote {
+	padding:15px 0px 15px 0px;
+	font-size: 12px;
+	font-style: italic;
+	font-variant: normal;
+	/*font-weight: 500;
+	line-height: 5px;*/
+}
+
 
 img {
    padding:15px 0px 15px 0px;
