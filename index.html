@@ -28,7 +28,7 @@
           <a data-toggle="tab" href="#3"><b>Comparison</b></a>
         </li>
         <li >
-          <a data-toggle="tab" href="#4"><b>NYC in 3D</b></a>
+          <a data-toggle="tab" href="#4"><b>Buildings in 3D</b></a>
         </li>
 
       </ul>
@@ -50,30 +50,43 @@
                       population density generally results in a greater selection of
                       restaurants, bars, cafes, and cultural amenities closer to someone's
                       house. But even within cities, population density is generally
-                      extremely varied. This map allows you to explore the population
-                      density of New York City.
+                      extremely varied.
                     </p>
             </div>
         </div>
 
         <div class="tab-pane" id="2">
             <div class="sidebar">
-                <h0 class="header"><b>COUNTIES</b></h0>
-                    <p class="main"> SUP THIS IS SOME INFO ABOUT COUNTIES </p>
+                <h0 class="header"><b>State and County level populations</b></h0>
+                    <p class="main"> Surprisingly, population is only loosely correlated
+                      with a state's geographic area. Larger western states are often are often
+                      sparsely populated compared to more densely populated eastern states. This interactive
+                      map changes from state level to county level as you zoom in so that you can
+                      get a closer view of how populations are spread out across the US as a whole
+                      and within each state.
+                  </p>
             </div>
         </div>
 
         <div class="tab-pane" id="3">
             <div class="sidebar">
-                <h0 class="header"><b>COUNTIES</b></h0>
-                    <p class="main"> SUP THIS IS SOME INFO ABOUT comparing </p>
+                <h0 class="header"><b>The Slider</b></h0>
+                    <p class="main"> The point of this tab is to allow you
+                      to scroll around the map and see play with the slider
+                      and compare city locations and high population county locations</p>
             </div>
         </div>
 
         <div class="tab-pane" id="4">
             <div class="sidebar">
-                <h0 class="header"><b>COUNTIES</b></h0>
-                    <p class="main"> SUP THIS IS SOME INFO ABOUT 3dness </p>
+                <h0 class="header"><b>Building heights</b></h0>
+                    <p class="main"> Scroll around this map. Taller buildings allow
+                      and increased population density. In Philadelphia, center city is
+                      mostly office buildings. But as you move further out from the urban
+                      core you enter the suburbs where most buildings are one or two floors and
+                      have bigger yards. This is lower population density and requires people to own cars,
+                      whereas in the center of the city people can walk, ride bikes, or take transit.
+                     </p>
             </div>
         </div>
       </div>
@@ -82,10 +95,38 @@
 
     <!-- Map -->
     <div id="map_container_city" class="map"></div>
-    <div id="map_container_county" class="map" style="visibility : hidden"></div>
+    <div id="map_container_county" class="map" style="visibility : hidden">
+      <div id='state-legend' class='legend'>
+          <!-- LEGEND -->
+          <h4>Population</h4>
+          <div><span style='background-color: #723122'></span>25,000,000</div>
+          <div><span style='background-color: #8B4225'></span>10,000,000</div>
+          <div><span style='background-color: #A25626'></span>7,500,000</div>
+          <div><span style='background-color: #B86B25'></span>5,000,000</div>
+          <div><span style='background-color: #CA8323'></span>2,500,000</div>
+          <div><span style='background-color: #DA9C20'></span>1,000,000</div>
+          <div><span style='background-color: #E6B71E'></span>750,000</div>
+          <div><span style='background-color: #EED322'></span>500,000</div>
+          <div><span style='background-color: #F2F12D'></span>0</div>
+      </div>
+      <div id='county-legend' class='legend' style='display: none;'>
+          <h4>Population</h4>
+          <div><span style='background-color: #723122'></span>1,000,000</div>
+          <div><span style='background-color: #8B4225'></span>500,000</div>
+          <div><span style='background-color: #A25626'></span>100,000</div>
+          <div><span style='background-color: #B86B25'></span>50,000</div>
+          <div><span style='background-color: #CA8323'></span>10,000</div>
+          <div><span style='background-color: #DA9C20'></span>5,000</div>
+          <div><span style='background-color: #E6B71E'></span>1,000</div>
+          <div><span style='background-color: #EED322'></span>100</div>
+          <div><span style='background-color: #F2F12D'></span>0</div>
+      </div>
+
+    </div>
     <div id="map_container_compare_a" class="map" style="visibility : hidden"></div>
-    <div id="map_container_compare_b" class="map" style="visibility : hidden"></div>
-    <div id="map_container_nyc3d" class="map" style="visibility : hidden"></div>
+    <div id="map_container_compare_b" class="map" style="visibility : hidden">
+    </div>
+    <div id="map_container_3d" class="map" style="visibility : hidden"></div>
 
 
     <!-- Javascript Imports -->
